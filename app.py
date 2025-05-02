@@ -14,8 +14,8 @@ load_dotenv()
 
 # load the GROQ and Google API key from the env file
 
-groq_api_key = os.getenv('GROQ_API_KEY')
-os.environ['GOOGLE_API_KEY'] = os.getenv("GOOGLE_API_KEY")
+google_api_key = st.secrets["GOOGLE_API_KEY"]
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 st.title("Gemma model chatbot document Q&A")
 
