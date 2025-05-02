@@ -36,7 +36,7 @@ def vector_embeddings():
     if "vectorstore" not in st.session_state:
         st.session_state.embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
         st.session_state.loader = PyPDFDirectoryLoader(
-            r"C:\Users\adish\OneDrive\Desktop\Learning\GENAI\END 2 END DOC QA\pdfs"
+         pdfs   
         )
         st.session_state.docs = st.session_state.loader.load()
         st.session_state.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
