@@ -17,7 +17,7 @@ load_dotenv()
 google_api_key = st.secrets["GOOGLE_API_KEY"]
 groq_api_key = st.secrets["GROQ_API_KEY"]
 
-st.title("Gemma model chatbot document Q&A")
+st.title("Computer Vision Research papers Chatbot")
 
 llm = ChatGroq(groq_api_key = groq_api_key, model_name='gemma2-9b-it')
 
